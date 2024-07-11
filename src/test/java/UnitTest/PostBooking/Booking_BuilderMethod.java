@@ -28,6 +28,30 @@ public class Booking_BuilderMethod {
     @JsonProperty
     private String additionalNeeds;
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public int getTotalPrice() {
+        return totalPrice;
+    }
+
+    public boolean isDepositPaid() {
+        return depositPaid;
+    }
+
+    public BookingDates getBookingDates() {
+        return bookingDates;
+    }
+
+    public String getAdditionalNeeds() {
+        return additionalNeeds;
+    }
+
     public Booking_BuilderMethod(BookingBuilder bookingBuilder) {
         this.firstName = bookingBuilder.firstname;
         this.lastName = bookingBuilder.lastname;
